@@ -1,13 +1,12 @@
 #!/bin/bash
-# myapp.sh - Entrypoint script for MyApp
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 DOMAIN="localhost:8000"
 URL="http://$DOMAIN"
 
 # Start PHP server in the background, detached from terminal
-echo "Starting PHP server at $DOMAIN from $SCRIPT_DIR" > /tmp/myapp.log
-nohup php -S $DOMAIN -t "$SCRIPT_DIR" >> /tmp/myapp.log 2>&1 &
+nohup php -S $DOMAIN -t "$SCRIPT_DIR" >> /tmp/makeself-app.log 2>&1 &
 PHP_PID=$!
 
 # Wait a moment for the server to start

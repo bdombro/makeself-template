@@ -1,0 +1,20 @@
+[tools]
+#php = "8"
+
+[env]
+APP_NAME = "MyApp"
+APP_SLUG = "myapp"
+
+[tasks.clean]
+description = "Cleans the installer artifacts"
+run = """
+find bundle -type f -name '*.run' -delete
+find . -type d -name node_modules -delete
+"""
+
+[tasks.gnome]
+description = "Builds the Gnome installer"
+run = """
+mise clean
+./bundle/gnome/bundle.sh
+"""
