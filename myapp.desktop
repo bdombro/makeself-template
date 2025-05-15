@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=MyApp
+Exec=/home/brian/.local/share/myapp/myapp.sh
+Icon=myapp
+Terminal=false
+Categories=Utility;
+Comment=Start MyApp
