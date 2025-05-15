@@ -1,8 +1,7 @@
 #!/bin/bash
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT_DIR="$SCRIPT_DIR/../../"
-
+ROOT_DIR="$HOME/.local/share/$APP_SLUG"
+SCRIPT_DIR="$ROOT_DIR/bundle/gnome"
 
 echo "***************************************************"
 echo "$APP_NAME Gnome Installer"

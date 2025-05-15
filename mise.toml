@@ -1,5 +1,5 @@
 [tools]
-#php = "8"
+php = "8"
 
 [env]
 APP_NAME = "MyApp"
